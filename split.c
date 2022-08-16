@@ -155,7 +155,7 @@ int split_commands(data_shell *datash, char *input)
 		go_next(&list_s, &list_l, datash);
 
 		if (list_l != NULL)
-			list_l = list_l->next
+			list_l = list_l->next;
 	}
 
 	free_sep_list(&head_s);
