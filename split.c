@@ -18,7 +18,7 @@ char *swap_char(char *input, int bool)
 			if (input[i] == '|')
 			{
 				if (input[i + 1] != '|')
-					input[i] = 16;
+					input[i] = 61;
 				else
 					i++;
 			}
@@ -36,7 +36,7 @@ char *swap_char(char *input, int bool)
 	{
 		for (i = 0; input[i]; i++)
 		{
-			input[i] = (input[i] == 16 ? '|' : input[i]);
+			input[i] = (input[i] == 61 ? '|' : input[i]);
 			input[i] = (input[i] == 12 ? '&' : input[i]);
 		}
 	}
